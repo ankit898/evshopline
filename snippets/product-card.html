@@ -57,7 +57,7 @@
       </div>
       
       {{#comment}} added new custom statement {{/comment}}
-      
+      {{#if product_data.available}}
       <div class="card__badge {{theme_settings.product_discount_position}} {{#unless product_data.available}}sold-out-message{{/unless}}">
         {{~#unless product_data.available}}
           <span class=" body4 fw-bold">
@@ -71,6 +71,7 @@
           </span>
         {{/and ~}}
       </div>
+      {{/if}}
       {{#comment}} added new custom statement {{/comment}}
 
       {{#and show_quick_add product_data product_data.available}}
