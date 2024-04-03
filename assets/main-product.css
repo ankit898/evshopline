@@ -1,0 +1,15 @@
+.detail-page-title {
+    color: red;
+}
+.product-form__input input[type="radio"]:checked + label {
+    background-color: blue;
+}
+.product__info-description.rte > p:first-child {
+    font-weight: bold;
+    color: #000;
+}
+
+.product__info-description.rte > p:last-child {
+    font-weight: bold;
+    color: green;
+}

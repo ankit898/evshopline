@@ -1,0 +1,30 @@
+.review-block + .review-block {
+    margin-top: 30px;
+}
+.rating-block {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.review-title-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+.review-block .user {
+    font-size: 20px;
+}
+
+.review-title-wrapper p {
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 0;
+}
+.review-block .review-descr {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}

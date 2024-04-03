@@ -1,0 +1,11 @@
+{{ assign "breadcrumbs"  (split breadcrumb ",")}}
+
+<div id="product-crumbs">
+    <a class="body4" href="{{ redirect_to '/'}}">{{t 'general.general.home'}}</a> 
+    <span style="margin: 0 7px;opacity: .3;">/</span>
+    {{#each breadcrumbs as |crumb|}}
+        <a href="/collections/{{ replace crumb ' ' '-'}}">{{crumb}}</a>
+        <span style="margin: 0 7px;opacity: .3;">/</span>
+    {{/each}}
+    <a href="javascript:;" class="product-crumbs-productName" style="opacity: .6;">{{ title }}</a>
+</div>
